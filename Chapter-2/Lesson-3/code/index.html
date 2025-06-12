@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* all the image tag inside body tag will be selected */
+      img {
+        width: 100px;
+        height: 100px;
+      }
+
+      /* all the table,td, th from body tag */
+      table,
+      td,
+      th {
+        border: 1px solid palevioletred;
+        border-collapse: collapse;
+      }
+
+      table {
+        width: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <!-- Table -->
+        <table>
+          <caption>
+            User Data
+          </caption>
+
+          <!-- tr -> table row -->
+          <!-- td -> table cell -->
+          <thead>
+            <tr>
+              <th>S No.</th>
+              <th>User Id</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Profile picture</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>297809</td>
+              <td rowspan="2">Alina</td>
+              <td>20
+                <!-- <table> -->
+              <!-- </table> -->
+            </td>
+              <td><img src="./images/facebook.jpg" alt="facebook" /></td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>73983</td>
+              <!-- <td>Alina</td> -->
+              <td>22</td>
+              <td><img src="./images/facebook.jpg" alt="facebook" /></td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>79403</td>
+              <td>John</td>
+              <td colspan="2">25</td>
+              <!-- <td><img src="./images/facebook.jpg" alt="facebook" /></td> -->
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <!-- Form -->
+        <form
+          method="post"
+          target="_blank"
+          action="./submit.html"
+          autocomplete="off"
+        >
+          <label for="fname">Enter Name</label>
+          <input
+            type="text"
+            name="fname"
+            value=""
+            placeholder="Please enter name"
+            required
+            minlength="3"
+            maxlength="20"
+          />
+
+          <label for="email">Enter Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Please enter email"
+            value="admin@gmail.com"
+          />
+
+          <label for="age">Enter Age</label>
+          <input type="number" name="age" placeholder="Enter age" disabled />
+
+          <input type="radio" value="female" name="gender" />
+          <label>Female</label>
+          <input type="radio" value="male" name="gender" />
+          <label>Male</label>
+
+          <input type="color" name="color" />
+          <input type="time" name="time" />
+          <input type="date" name="date" />
+
+          <label for="resume">Upload resume</label>
+          <input type="file" multiple />
+
+          <!-- dropdown -->
+          <label for="country">Select Country</label>
+          <select name="country">
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+          </select>
+
+          <textarea name="about" rows="10" cols="20">
+Enter about yourself</textarea
+          >
+
+          <button>Submit</button>
+          <input type="reset" />
+
+          <input type="checkbox" />I agree to T&C
+
+          <input type="image" src="" alt />
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
