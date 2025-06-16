@@ -1,0 +1,86 @@
+/* select all the html elements */
+* {
+  /* background-color: beige; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* selecting element by name */
+/* div {
+  background-color: thistle;
+  background-color: yellowgreen;
+} */
+
+/* class selector */
+.sample {
+  color: white;
+  font-size: 20px;
+}
+
+/* id selector */
+#image {
+  height: 100px;
+  width: 100px;
+}
+
+/* group selector */
+/* .sample,
+#image,
+p {
+} */
+
+.border {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: teal;
+
+  /* property shorthand */
+  border: 2px solid palevioletred;
+  border-radius: 10px;
+
+  border-top: 2px solid orange;
+
+  /* to make circle  */
+  /* border-radius: 50%; */
+}
+
+.margin {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+
+  /* space between 2 element-> margin  */
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+
+  /* property shorthand  */
+  margin: 10px;
+
+  /* top/bottom left/right */
+  margin: 10px 20px;
+}
+
+.padding {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  border: 2px solid palevioletred;
+
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  /* property shorthand  */
+  padding: 10px;
+
+  /* top/bottom left/right */
+  padding: 10px 20px;
+}
