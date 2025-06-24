@@ -1,0 +1,91 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#text {
+  color: teal;
+  text-align: center;
+
+  /* text-decoration: overline; */
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  word-spacing: 5px;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Sevillana", cursive;
+}
+
+#background {
+  height: 400px;
+  background-color: yellow;
+
+  /* background-image: url("https://repper.app/_next/static/media/collection_patterns_text_top.caacf7c1.png"); */
+
+  background-image: url("../images/Capture.PNG");
+  background-repeat: no-repeat;
+
+  /* background-position: center; */
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  /* property shorthand */
+  /* background: green url() no-repeat fixed cover */
+}
+
+/* combinators */
+/* descendant (space) */
+/* select all the <h2> which are descanfant of <body> */
+body h2 {
+  color: palevioletred;
+}
+
+/* child selector (>) */
+#sample > h2 {
+  font-size: 10px;
+}
+
+/* next sibling (+) */
+#select + div {
+  background-color: orange;
+}
+
+/* adjancent sibling (~) */
+#select ~ div {
+  color: blue;
+}
+
+.flex-container {
+  height: 500px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+
+  /* horizontal  */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  /* vertical  */
+  align-content: space-between;
+}
+
+.flex-container > div {
+  background-color: palevioletred;
+  border: 2px solid black;
+  /* margin: 10px; */
+  width: 50%;
+  height: 200px;
+}
