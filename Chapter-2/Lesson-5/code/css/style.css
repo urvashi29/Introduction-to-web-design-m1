@@ -89,3 +89,18 @@ body h2 {
   width: 50%;
   height: 200px;
 }
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex > div {
+  background-color: turquoise;
+  border: 2px solid black;
+  /* width: 23%; */
+  height: 300px;
+}
+
+
+
