@@ -1,0 +1,57 @@
+#media {
+  background-color: yellow;
+}
+
+#para {
+  font-size: 20px;
+}
+
+/* mobile phones */
+/* 400px and below */
+@media screen and (max-width: 400px) {
+  #media {
+    background-color: orange;
+  }
+
+  #para {
+    font-size: 12px;
+  }
+}
+
+/* large phone: 600px and above */
+@media screen and (min-width: 600px) {
+  #media {
+    background-color: pink;
+  }
+
+  #para {
+    font-size: 12px;
+  }
+}
+
+/* 768px and above tablets */
+@media screen and (min-width: 768px) {
+  #media {
+    background-color: palevioletred;
+  }
+}
+
+/* 992px and above (Ipad) */
+@media screen and (min-width: 992px) {
+  #media {
+    background-color: aquamarine;
+  }
+}
+
+/* 1200px and above laptop, destop*/
+@media screen and (min-width: 1200px) {
+  #media {
+    background-color: palegreen;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #media {
+    background-color: blue;
+  }
+}
